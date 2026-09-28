@@ -10,7 +10,7 @@ namespace Application.Interfaces.Repositories
 {
     public interface IStudentAssignmentRepository
     {
-        Task<StudentAssignmentDto?> GetStudentAssignmentByIdAsync(int studentAssignmentId);
+        Task<IReadOnlyList<StudentAssignmentDto>> GetStudentAssignmentsByAssignmentAsync(int assignmentId);
         Task<int> CreateStudentAssignmentAsync(StudentAssignment studentAssignment);
         Task<bool> UpdateStudentAssignmentAsync(StudentAssignment studentAssignment);
         

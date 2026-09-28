@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Application.Dtos.TeacherDto
 {
-   public class UpdateTeacherRequestcs
+   public class UpdateTeacherRequest
     {
         [Required(ErrorMessage = "Teacher name is required.")]
         public string TeacherName { get; set; } = string.Empty;

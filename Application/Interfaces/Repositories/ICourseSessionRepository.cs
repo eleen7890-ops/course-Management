@@ -11,7 +11,7 @@ namespace Application.Interfaces.Repositories
     {
         Task<IReadOnlyList<CourseSession>> GetAllCourseSessionsAsync();
         Task<CourseSession?> GetCourseSessionByIdAsync(int courseSessionId);
-        Task<CourseSession?> GetCourseSessionByCourseIdAsync(int courseId);
+        Task<IReadOnlyList<CourseSession>> GetCourseSessionsByCourseAsync(int courseId);
         Task<int> CreateCourseSessionAsync(CourseSession courseSession);
         Task<bool> UpdateCourseSessionAsync(CourseSession courseSession);
     }

@@ -10,12 +10,12 @@ namespace Application.Interfaces.Repositories
 {
     public interface IAttendanceRepository
     {
-        Task<IReadOnlyList<AttendanceDto>> GetAllAttendancesAsync();
-        Task<Attendance?> GetAttendanceByIdAsync(int courseSessionId);
+        Task<AttendanceDto?> GetAttendanceBySessionAsync(int courseSessionId);
         Task<int> CreateAttendanceAsync(Attendance attendance);
-        
+        Task<bool> UpdateAttendanceAsync(Attendance attendance);
+
 
 
     }
-    }
+}
 
